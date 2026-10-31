@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "seven-builder",
+  "version": "${version}",
+  "name": "7 Loves Ella Langley Auto Builder",
+  "description": "Standalone automatic Litematica schematic builder with material planning, real container restocking, shulker handling, Overworld/End elytra travel through Baritone, mismatch correction and persistent progress.",
+  "authors": [
+    "7"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/seven-builder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "sleepy.autobuilder.SevenBuilderAddon"
+    ]
+  },
+  "mixins": [
+    "sevenbuilder.mixins.json"
+  ],
+  "accessWidener": "sevenbuilder.accesswidener",
+  "custom": {
+    "meteor-client:color": "80,200,120"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["1.21.1"],
+    "meteor-client": "*"
+  },
+  "suggests": {
+    "litematica": "*",
+    "malilib": "*",
+    "baritone": "*"
+  }
+}
